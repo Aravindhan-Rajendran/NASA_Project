@@ -27,7 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getImageOfTheDay(event) {
         event.preventDefault();
-        let dateInput = document.getElementById('search-input').value || "";
+        let dateInput = document.getElementById('search-input').value || "2024-07-01";
+        console.log(dateInput);
         document.getElementById('headings').innerText = `Picture On ${dateInput}`;
         fetch(`https://api.nasa.gov/planetary/apod?date=${dateInput}&api_key=${your_api_key}`)
             .then(response => response.json())
