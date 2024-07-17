@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin-top: 0px;
+}
+
+#current-image-container {
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+#imges {
+    width: 90%;
+    height: auto;
+}

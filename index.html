@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/800px-NASA_logo.svg.png">
+</head>
+<body>
+    <section>
+        <section id="current-image-container">
+            <div style="height:70px">
+                <h1 id="headings" style="color: white; font-size: 3rem;"></h1>
+            </div>
+            <div id="media-container" style="justify-content: center; align-items: center; width: 92%; height: 520px; display: flex; margin: auto;"></div>
+            <p id="description" style="color: white; font-size: 1.5rem;margin-top: 20px;"></p>
+        </section>
+        <form id="search-form">
+            <h1 style="font-size: 3rem;margin-top: 30px;">Search for a Picture of the Day</h1>
+            <div>
+                <label for="date-input">Select a Date: </label>
+                <input id="searxh-input" type="date">
+                <button type="submit" id="submit">Search</button>
+            </div>
+            <div>
+                <h1 style="font-size: 3rem;margin-top: 30px;">Previous Search</h1>
+                <ul id="search-history">
+                </ul>
+            </div>
+        </form>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
